@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #000000;
+}
+
+main {
+    font-family: 'Oswald', sans-serif;
+}
+
+div header nav div ul {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#sec-carrossel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+#esquerda {
+    width: 20%;
+    /*background-color: #FFF067;*/
+}
+
+#carrossel {
+    width: 60%;
+}
+
+#direita {
+    width: 20%;
+    /*background-color: #47D3FF;*/
+}
+
+#logo {
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+header ul li {
+    font-family: 'Oswald', sans-serif;
+}
+.amarelo {
+    color: #FFF067;
+}
+
+.azul {
+    color: #05c5ff;
+}
+
+#campo-buscar {
+    border-color: #ee1195 !important;
+    background-color: #000000;
+    border-radius: 5px;
+    margin-top: 0.8vh;
+    margin-left: 5vw;
+    color: white;
+}
+
+header ul li .btn {
+    background-color: transparent;
+}
+
+header ul li .btn #icon-search {
+    color: #ee1195 !important;
+    font-size: 1.2rem;
+}
+header ul li .btn #icon-user {
+    color: #ee1195 !important;
+    margin-top: 0.7vh;
+    font-size: 1.5rem;
+}
+
+header ul li input::placeholder {
+    background-color: transparent !important;
+    color: #ee1195;
+    text-align: center;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '›';
+    font-size: 50px;
+    color: #FF15A2;
+    margin-left: 10vw;
+}
+
+.carousel-control-prev-icon:after {
+    content: '‹';
+    font-size: 50px;
+    color: #FF15A2;
+    margin-left: -15vw;
+}
+
+#lado {
+    width: 20%;
+}
+
+#copy {
+    color: #47D3FF;
+    width: 60%;
+}
+
+#icons {
+    color: #FFF067;
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+
+.dezessete {
+    color: #FF15A2;
+    font-size: 6vw;
+    line-height: 6vw;
+    text-shadow: 0 0 2vw #ee1195;
+}
+
+.seventeen {
+    color: #47D3FF;
+    font-size: 6vw;
+    line-height: 6vw;
+    text-shadow: 0 0 2vw #05c5ff;
+}
+
+.dezessete {
+    animation: dezessete 1s ease infinite;
+    -moz-animation: dezessete 1s ease infinite;
+    -webkit-animation: dezessete 1s ease infinite;
+}
+
+@keyframes dezessete {
+
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #da0e88, 0 0 2vw #da0e88, 0 0 10vw #da0e88, 0 0 10vw #da0e88, 0 0 .4vw #ff54bb, .5vw .5vw .1vw #ad0068;
+        color: #ff54bb;
+    }
+
+    50% {
+        text-shadow: 0 0 .5vw #750247, 0 0 1.5vw #750247, 0 0 5vw #750247, 0 0 5vw #750247, 0 0 .2vw #750247, .5vw .5vw .1vw #551d3e;
+        color: #91376d;
+    }
+}
+
+.seventeen {
+    animation: seventeen 2s linear infinite;
+    -moz-animation: seventeen 2s linear infinite;
+    -webkit-animation: seventeen 2s linear infinite;
+    -o-animation: seventeen 2s linear infinite;
+}
+
+@keyframes seventeen {
+
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #18aad6, 0 0 2vw #18aad6, 0 0 10vw #18aad6, 0 0 10vw #18aad6, 0 0 .4vw #47D3FF, .5vw .5vw .1vw #206074;
+        color: #47D3FF;
+    }
+
+    50% {
+        text-shadow: 0 0 .5vw #065168, 0 0 1.5vw #065168, 0 0 5vw #065168, 0 0 5vw #065168, 0 0 .2vw #065168, .5vw .5vw .1vw #12353f;
+        color: #206074;
+    }
+}
+
+
+
+/* PRODUTOS */
+
+#sec-produtos {
+    margin-top: 5vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    border: none;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.card-body {
+    background-color: #131313;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    margin-top: -1vh;
+}
+
+.btn {
+    height: 5vh;
+}
+
+.botao-carrinho {
+    background-color: transparent;
+    color: #47D3FF;
+    border: none;
+    margin-top: -1vh;
+    font-size: 1.5rem;
+}
+
+
+/* CADASTRO */
+
+form {
+    width: 40vw;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+    margin-top: 3.7vh;
+}
+
+
+main form div input {
+    text-align: center;
+    border: none !important;
+}
+
+main form div input{
+    background-color: #131313 !important;
+    color: #FFFF !important;
+}
+
+main form div input::placeholder {
+    color: #05c5ff !important;
+}
+
+main form a {
+    background-color: #FFF067 !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+main a {
+    font-size: 0.8rem;
+    color: #FF15A2;
+    text-align: center;
+}
+
+#soma{
+    font-size: 1.8rem;
+    margin-top: -2vh;
+    color: #FFF067;
+}
+
+#igual{
+    font-size: 1.8rem;
+    color: #FFF067;
+}
+
+#titulo {
+    color: #FF15A2;
+    margin-bottom: 4vh;
+}
+
+#titulo-login {
+    color: #FF15A2;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+#form-login {
+    width: 30vw;
+}
+
+/* DETALHES */
+
+#produto-detalhe {
+    width: 40vh;
+    margin-top: 0vh;
+}
+
+#detalhes-texto {
+    margin-top: 15vh;
+
+}
+
+#sec-detalhes {
+    width: 45vw;
+    margin: 0 auto;
+}
+
+/* LOGIN */
+
+#esqueceu-senha {
+    color: #FFF067 !important;
+    opacity: 0.7;
+}
+
+/*CARRINHO */
+
+#carrinho-imagem {
+    width: 5vw;
+}
+
+/*RECUPERAR SENHA */ 
+
+#sec-senha {
+    width: 30vw;
+    margin: 0 auto;
+    color: #ffff;
+}
+
+#sec-senha label {
+    margin-top: 7vh;
+}
+
+#sec-senha input {
+    margin-top: 7vh;
+}
+#sec-senha a {
+    margin-top: 7vh;
+}
+
+@media (max-width: 376px) {
+    header .nav {
+        display: none;
+    }
+
+    .dezessete {
+        font-size: 10VW;
+        line-height: 10VW;
+    }
+    
+    .seventeen {
+        font-size: 10VW;
+        line-height: 10VW;
+    }
+
+    #sec-carrossel {
+        display: none;
+    }
+
+    main #titulo {
+        font-size: 2rem !important;
+    }
+
+    main #sec-detalhes  {
+        width: 70vw;
+        display: block;
+    }
+
+    main #sec-detalhes #detalhes-texto {
+        margin-top: 0;
+    }
+
+    main #form-login {
+        width: 80vw;
+    }
+
+    main #form-cadastro {
+        width: 80vw;
+    }
+
+    main #sec-senha {
+        width: 90vw
+    }
+
+    #footer-carrinho {
+        margin: 0 auto;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+    }
+    
+    #lado-carrinho {
+        display: none;
+    }
+
+}
+
+@media (min-width: 377px) {
+    header .navbar {
+        display: none;
+    }
+
+    main .card-deck {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1279px) {
+    main #sec-carrossel {
+        width: 100%;
+    }
+
+    main #carrossel {
+        width: 100%;
+    }
+
+    #footer-index {
+        width: 100%;
+        bottom: 0;
+    }
+
+    #footer-carrinho {
+        margin: 0 auto;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+    }
+
+
+}
+
